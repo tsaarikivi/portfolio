@@ -16,10 +16,34 @@
     <meta name="keywords" content="portfolio" />
     <meta name="robots" content="index" />
 
+    <link
+      href="https://fonts.googleapis.com/css?family=Comfortaa|Ubuntu+Mono&display=swap"
+      rel="stylesheet"
+    />
+
     <style>
       body {
         margin: 0;
         background-color: #040404;
+      }
+      .content-container {
+        box-sizing: border-box;
+        padding: 0 12px;
+        margin: 54px auto 54px;
+        width: 100%;
+        max-width: 880px;
+      }
+      section {
+        margin-top: 54px;
+      }
+      h1,
+      h2 {
+        font-family: "Comfortaa", cursive;
+        font-weight: normal;
+      }
+      p,
+      a {
+        font-family: "Ubuntu Mono", monospace;
       }
       h1 {
         color: rgba(255, 255, 255, 0.98);
@@ -30,30 +54,95 @@
       p {
         color: rgba(255, 255, 255, 0.8);
       }
+      a {
+        color: white;
+        font-weight: bold;
+      }
+      ol {
+        list-style-type: none;
+      }
     </style>
   </head>
 
   <body>
-    <h1>Tero Saarikivi</h1>
+    <div class="content-container">
+      <h1>Tero Saarikivi</h1>
 
-    <ol>
-      <li>
-        <a href="#who">Who</a>
-        <a href="#what-i-wish-to-learn">What I wish to learn</a>
-        <a href="#workhistory">Workhistory</a>
-        <a href="#skills">Skills</a>
-        <a href="#open-projects">Open projects</a>
-      </li>
-    </ol>
+      <nav>
+        <ol>
+          <li>
+            <a href="#who">Who</a>
+          </li>
+          <li>
+            <a href="#what-i-wish-to-learn">What I wish to learn</a>
+          </li>
+          <li>
+            <a href="#workhistory">Workhistory</a>
+          </li>
+          <li>
+            <a href="#skills">Skills</a>
+          </li>
+          <li>
+            <a href="#open-projects">Open projects</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ol>
+      </nav>
 
-    <h2 id="who">Who</h2>
+      <section id="who">
+        <h2>Who</h2>
+        <p>I'm an observer personality. I learn by looking and doing.</p>
+      </section>
 
-    <h2 id="what-i-wish-to-learn">What I wish to learn</h2>
+      <section id="what-i-wish-to-learn">
+        <h2>What I wish to learn</h2>
+        <p>
+          I wish to learn about life from good people. I wish to learn new
+          skills from good teams. I wish to learn leadership from great leaders.
+          I wish to learn from hard technical challenges and how to scale
+          infrastructure and best practices in a scaling company.
+        </p>
+      </section>
 
-    <h2 id="workhistory">Workhistory</h2>
+      <section id="workhistory">
+        <h2>Workhistory</h2>
+        <p>
+          When I was 20 I decided to teach myself how to code. I started with
+          ASP NET, Ruby on Rails, React and Nodejs. After one and a half years
+          of living code, I had 2 real world projects under my belt. My first
+          project was a time reservation app for a local yoga studio. The second
+          one was a sauna reservation app for my parent's housing company. That
+          one is still alive and in use every week.
+          <br />
+          <br />
+          That is when I got introduced to Slush. I was the tech lead / CTO of
+          Slush for three years. I learned most of my real technical skills at
+          Slush.
+        </p>
+      </section>
 
-    <h2 id="skills">Skills</h2>
+      <section id="skills">
+        <h2>Skills</h2>
+        I have many skills.
+      </section>
 
-    <h2 id="open-projects">Open projects</h2>
+      <section id="open-projects">
+        <h2>Open projects</h2>
+        <p>
+          City bike locator web app <a href="https://baik.app">baik.app</a> @
+          <a href="https://github.com/tsaarikivi/baik.app">Github</a>. It is
+          made with Angular, Mapbox and HSL public API.
+        </p>
+      </section>
+
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>
+          Email: <a href="mailto:saarikivit@gmail.com">saarikivit@gmail.com</a>
+        </p>
+      </section>
+    </div>
   </body>
 </html>
