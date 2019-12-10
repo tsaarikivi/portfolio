@@ -37,12 +37,14 @@
         margin-top: 54px;
       }
       h1,
-      h2 {
+      h2,
+      h3 {
         font-family: "Comfortaa", cursive;
         font-weight: normal;
       }
       p,
-      a {
+      a,
+      ol {
         font-family: "Ubuntu Mono", monospace;
       }
       h1 {
@@ -51,7 +53,11 @@
       h2 {
         color: rgba(255, 255, 255, 0.93);
       }
-      p {
+      h3 {
+        color: rgba(255, 255, 255, 0.75);
+      }
+      p,
+      ol {
         color: rgba(255, 255, 255, 0.8);
       }
       a {
@@ -60,6 +66,7 @@
       }
       ol {
         list-style-type: none;
+        padding-inline-start: 12px;
       }
     </style>
   </head>
@@ -70,17 +77,29 @@
 
       <nav>
         <ol>
+          table of contents
           <li>
             <a href="#who">Who</a>
-          </li>
-          <li>
-            <a href="#what-i-wish-to-learn">What I wish to learn</a>
           </li>
           <li>
             <a href="#workhistory">Workhistory</a>
           </li>
           <li>
             <a href="#skills">Skills</a>
+            <ol>
+              <li>
+                <a href="#skills-general">General</a>
+              </li>
+              <li>
+                <a href="#skills-in-production">In production</a>
+              </li>
+              <li>
+                <a href="#skills-learning-projects">Learning projects</a>
+              </li>
+            </ol>
+          </li>
+          <li>
+            <a href="#what-i-wish-to-learn">What I wish to learn</a>
           </li>
           <li>
             <a href="#open-projects">Open projects</a>
@@ -91,45 +110,121 @@
         </ol>
       </nav>
 
-      <section id="who">
-        <h2>Who</h2>
-        <p>I'm an observer personality. I learn by looking and doing.</p>
-      </section>
+      <section>
+        <h2 id="who">Who</h2>
 
-      <section id="what-i-wish-to-learn">
-        <h2>What I wish to learn</h2>
         <p>
-          I wish to learn about life from good people. I wish to learn new
-          skills from good teams. I wish to learn leadership from great leaders.
-          I wish to learn from hard technical challenges and how to scale
-          infrastructure and best practices in a scaling company.
+          I was born in Helsinki, Finland, 1994. I'm an introverted observer
+          personality. I learn by looking, touching and doing. I love to build
+          stuff with my own hands. I gravitate towards good and honest
+          intentions. I wish to join communities where everyone feels they can
+          be themselves, that are like families.
         </p>
       </section>
 
-      <section id="workhistory">
-        <h2>Workhistory</h2>
+      <section>
+        <h2 id="workhistory">Workhistory</h2>
+
         <p>
           When I was 20 I decided to teach myself how to code. I started with
           ASP NET, Ruby on Rails, React and Nodejs. After one and a half years
           of living code, I had 2 real world projects under my belt. My first
-          project was a time reservation app for a local yoga studio. The second
-          one was a sauna reservation app for my parent's housing company. That
-          one is still alive and in use every week.
-          <br />
-          <br />
+          project was a reservation web app for a local yoga studio. The second
+          one was a sauna reservation web app for my parent's housing company.
+          That one is still alive and in use every week.
+        </p>
+
+        <p>
           That is when I got introduced to Slush. I was the tech lead / CTO of
           Slush for three years. I learned most of my real technical skills at
           Slush.
         </p>
       </section>
 
-      <section id="skills">
-        <h2>Skills</h2>
-        I have many skills.
+      <section>
+        <h2 id="skills">Skills</h2>
+
+        <h3 id="skills-general">General</h3>
+
+        <p>
+          At Slush I led at most a seven headed team. We created several
+          frontend and backend apps. We talked with customers and learned how to
+          gain feedback. As Slush is held once a year, we deployed our tools to
+          other conferences like HEL Tech and Stockholm Tech Fest to shorten the
+          feedback loop. We also utilized some tools like Hotjar and
+          UsabilityHub to gain feedback and test our hypothesis.
+        </p>
+
+        <p>
+          I learned how to take care of my team and communicate with other
+          teams. I learned a lot of respect and a lot from life.
+        </p>
+
+        <p>
+          I learned to design complex systems with a team. I learned a great
+          deal about how people tend to use web tools.
+        </p>
+
+        <h3 id="skills-in-production">In production</h3>
+
+        <p>
+          At Slush we utilized the Google Cloud Platform to most of our
+          deployments. We hosted a GraphQL API Gateway on App engine. We hosted
+          some Dockerized microservices on Kubernetes. We deployed them with
+          Circle CI. We used Google Cloud Pub/Sub for asynchronous service
+          communication. We hosted general functionality, triggers and CRON jobs
+          on Cloud Functions. We used Natural Language API to extract keywords
+          of the companies attending Slush, and indexed them for excellent
+          searchability through Algolia in our matchmaking tool. For data
+          analysis we used Metabase with a Postgres database. Through the data
+          at Slush I have also learned skills in Postgres and SQL in general.
+        </p>
+
+        <p>
+          All of our apps were written with Nodejs. All frontends with Angular.
+          Backends with Express and Nestjs.
+        </p>
+
+        <p>
+          We used Mongodb, Postgres, Firestore, Firebase realtime database,
+          Algolia and Elasticsearch as our production databases.
+        </p>
+
+        <h3 id="skills-learning-projects">Learning projects</h3>
+
+        <p>
+          At Slush we had a concept called "Lab Tuesdays." That was dedicated
+          time for learning anything we wanted. We made some stupid projects
+          together just to experiment. Some tools we used: React, Flutter,
+          Polymer, Stencil. We even built a project with the Twilio Voice API.
+        </p>
+
+        <p>
+          There are several more languages, tools and platforms I have had the
+          priviledge to learn about doing some small projects with them: Python,
+          Ruby, C#, C, PHP, Laravel, Ruby on rails, Svelte, Vue, Docusaurus,
+          Gatsby, deployments on Now, multiple tools on AWS, some tools on
+          Azure, droplets on Digital ocean, Jenkins, Gitlab, Github actions,
+          Travis, Apache Kafka, Rabbit MQ, Redis, Memcached, Neo4j and the list
+          goes on.
+        </p>
       </section>
 
-      <section id="open-projects">
-        <h2>Open projects</h2>
+      <section>
+        <h2 id="what-i-wish-to-learn">What I wish to learn</h2>
+
+        <p>
+          I wish to learn about life from good people. I wish to learn new
+          collaboration skills from good teams. I wish to learn leadership from
+          great leaders. I wish to learn from hard technical challenges and how
+          to scale good practices in a scaling company. I wish to learn how to
+          test software efficiently in scale.
+        </p>
+      </section>
+
+      <section>
+        <h2 id="open-projects">Open projects</h2>
+
         <p>
           City bike locator web app <a href="https://baik.app">baik.app</a> @
           <a href="https://github.com/tsaarikivi/baik.app">Github</a>. It is
@@ -137,8 +232,9 @@
         </p>
       </section>
 
-      <section id="contact">
-        <h2>Contact</h2>
+      <section>
+        <h2 id="contact">Contact</h2>
+
         <p>
           Email: <a href="mailto:saarikivit@gmail.com">saarikivit@gmail.com</a>
         </p>
